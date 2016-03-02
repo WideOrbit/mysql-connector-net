@@ -28,8 +28,6 @@ namespace MySql.Data.MySqlClient
 {
   internal class PerformanceMonitor
   {
-    private MySqlConnection connection;
-
     public PerformanceMonitor(MySqlConnection connection)
     {
       Connection = connection;

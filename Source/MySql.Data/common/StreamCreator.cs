@@ -36,7 +36,6 @@ namespace MySql.Data.Common
     string hostList;
     uint port;
     string pipeName;
-    uint timeOut;
     uint keepalive;
     DBVersion driverVersion;
 

@@ -48,7 +48,6 @@ namespace MySql.Data.MySqlClient
     MySqlTransaction curTransaction;
     string cmdText;
     CommandType cmdType;
-    long updatedRowCount;
     MySqlParameterCollection parameters;
     private IAsyncResult asyncResult;
     internal Int64 lastInsertedId;
@@ -499,7 +498,6 @@ namespace MySql.Data.MySqlClient
         // command behaviors
         HandleCommandBehaviors(behavior);
 
-        updatedRowCount = -1;
         try
         {
           MySqlDataReader reader = new MySqlDataReader(this, statement, behavior);

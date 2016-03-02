@@ -511,7 +511,7 @@ namespace MySql.Data.MySqlClient
           procedureCache = new ProcedureCache((int)Settings.ProcedureCacheSize);
         }
       }
-      catch (Exception ex)
+      catch (Exception)
       {
         SetState(ConnectionState.Closed, true);
         throw;
